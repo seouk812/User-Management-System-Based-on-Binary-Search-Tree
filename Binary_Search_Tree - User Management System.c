@@ -51,6 +51,7 @@ void Insert()
 	strcpy(newnode->name, name);
 	newnode->left = NULL;
 	newnode->right = NULL;
+	
 	if(head == NULL)
 	{
 		head = newnode;
@@ -95,7 +96,6 @@ void Search()
 
 void Print(NODE *pNODE)
 {
-	
 	if(pNODE != NULL)
 	{
 		Print(pNODE->left);
@@ -190,7 +190,6 @@ void Delete()
 			index = index->right;
 		}
 	}
-	
 		
 	printf("Cannot find... :(\n\n\n"); 
 	return;
